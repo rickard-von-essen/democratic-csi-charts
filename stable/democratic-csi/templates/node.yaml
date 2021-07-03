@@ -228,7 +228,7 @@ spec:
           type: Directory
       - name: registration-dir
         hostPath:
-          path: {{ .Values.node.kubeletHostPath }}/plugins_registry
+          path: {{ .Values.node.registrationHostPath }}
           type: Directory
       - name: kubelet-dir
         hostPath:

@@ -194,6 +194,7 @@ node:
   hostAliases: []
   hostIPC: true
   kubeletHostPath: /var/lib/kubelet
+  registrationHostPath: "{{ .Values.node.kubeletHostPath }}/plugins_registry"
   podAnnotations: {}
   podLabels: {}
 
